@@ -1,4 +1,7 @@
 from ipok import IPokemon
+from tfogo import PFogo
 
-pikachu = IPokemon()
-print(pikachu.vida)
+p1= PFogo()
+
+print(p1.show_vida())
+

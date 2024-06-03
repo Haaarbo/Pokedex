@@ -3,10 +3,6 @@ from random import randint
 
 class IPokemon(ABC):
     @abstractmethod
-    def tipo_elemento(self):
-        pass
-
-    @abstractmethod
     def atk1(self):
         pass
 
@@ -18,4 +14,10 @@ class IPokemon(ABC):
     def atk3(self):
         pass
 
+    def show_vida(self):
+        self.vida = randint(10, 19)
+        return self.vida
     
+    def set_vida(self):
+        self.vida
+  
