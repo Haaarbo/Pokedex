@@ -12,12 +12,8 @@ class IPokemon(ABC):
 
     @abstractmethod
     def atk3(self):
-        pass
-
-    def show_vida(self):
-        self.vida = randint(10, 19)
-        return self.vida
+        pass 
     
-    def set_vida(self):
-        self.vida
-  
+    #função de aplicar algum dano a algo
+    def aplicar_dmg(self, vida, dmg):
+        return vida - dmg
